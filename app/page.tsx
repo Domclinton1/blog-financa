@@ -81,7 +81,7 @@ export default function Home() {
       <section className="bg-gray-100 py-16">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-2xl font-semibold mb-2 text-[#0d0d0d]">
-            Receba dicas de finanças
+            RECEBA DICAS DE FINANÇAS
           </h2>
           <p className="text-gray-600 mb-4">
             Entre para nossa lista e receba conteúdos sobre finanças e renda
