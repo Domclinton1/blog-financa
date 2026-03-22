@@ -11,7 +11,7 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-[#0d0d0d]">
-          FinançasPro
+          RENDA INTELIGENTE
         </Link>
 
         {/* Menu Desktop */}
