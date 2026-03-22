@@ -29,7 +29,7 @@ export default function Home() {
 
         <div className="relative max-w-6xl mx-auto px-6 py-24 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Aprenda Finanças, Investimentos e Renda Extra
+            Aprenda Finanças, Investimentos, Empreendedorismo e Renda Extra
           </h1>
 
           <p className="text-lg mb-6 max-w-2xl">
