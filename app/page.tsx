@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Home() {
   const posts = [
     {
@@ -27,22 +27,37 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('/banner.png')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-black/50"></div>
 
-        <div className="relative max-w-6xl mx-auto px-6 py-24 text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Aprenda Finanças, Investimentos, Empreendedorismo e Renda Extra
-          </h1>
+        <div className="relative max-w-6xl mx-auto px-6 py-24 ">
+          <div className="flex flex-col  md:flex-row items-center gap-10 text-white">
+            {/* Coluna texto */}
+            <div className="flex-1">
+              <h1 className="text-4xl  md:text-5xl font-bold mb-4">
+                Aprenda Finanças, Investimentos, Empreendedorismo e Renda Extra
+              </h1>
 
-          <p className="text-lg mb-6 max-w-2xl">
-            Conteúdos completos sobre finanças pessoais, investimentos,
-            economia, renda extra e como ganhar dinheiro na internet.
-          </p>
+              <p className="text-lg mb-6 max-w-xl">
+                Conteúdos completos sobre finanças pessoais, investimentos,
+                economia, renda extra e como ganhar dinheiro na internet.
+              </p>
 
-          <Link
-            href="/blog"
-            className="bg-white text-black px-6 py-3 rounded-lg font-semibold"
-          >
-            Acessar artigos
-          </Link>
+              <Link
+                href="/blog"
+                className="bg-white text-black px-6 py-3 rounded-lg font-semibold"
+              >
+                Acessar artigos
+              </Link>
+            </div>
+
+            {/* Coluna imagem/logo */}
+            <div className="flex-1 flex justify-center">
+              <Image
+                src="/logo.png"
+                width={500}
+                height={500}
+                alt="Logo Renda GPS"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

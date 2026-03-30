@@ -11,8 +11,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "FinançasPro - Finanças Pessoais, Renda Extra e Investimentos",
-    template: "%s | FinançasPro",
+    default: "Renda GPS - Finanças Pessoais, Renda Extra e Investimentos",
+    template: "%s | Renda GPS",
   },
   description:
     "Aprenda sobre finanças pessoais, investimentos, renda extra e como ganhar dinheiro na internet. Dicas para economizar, investir e melhorar sua vida financeira.",
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     "cartão de crédito",
     "tesouro direto",
   ],
-  authors: [{ name: "FinançasPro" }],
-  creator: "FinançasPro",
-  metadataBase: new URL("https://www.financaspro.com"),
+  authors: [{ name: "Renda GPS" }],
+  creator: "Renda GPS",
+  metadataBase: new URL("https://www.rendagps.com.br"),
   openGraph: {
-    title: "FinançasPro",
+    title: "Renda GPS",
     description: "Blog sobre finanças pessoais, investimentos e renda extra.",
-    url: "https://www.financaspro.com",
-    siteName: "FinançasPro",
+    url: "https://www.rendagps.com.br",
+    siteName: "Renda GPS",
     locale: "pt_BR",
     type: "website",
   },
@@ -53,7 +53,7 @@ export default function RootLayout({
       <body className="flex flex-col min-h-screen font-sans">
         <Header />
 
-        <main className="flex-grow">{children}</main>
+        <main className="grow">{children}</main>
 
         <Footer />
       </body>

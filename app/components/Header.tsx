@@ -2,16 +2,17 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full border-b bg-white">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="w-full border-b bg-white z-10 ">
+      <div className="max-w-6xl mx-auto px-8 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-[#0d0d0d]">
-          RENDA INTELIGENTE
+          <Image src="/logo.png" width={120} height={50} alt="Logo Renda GPS" />
         </Link>
 
         {/* Menu Desktop */}
@@ -31,7 +32,10 @@ export default function Header() {
         </nav>
 
         {/* Botão Mobile */}
-        <button className="md:hidden" onClick={() => setOpen(true)}>
+        <button
+          className="md:hidden text-black font-bold text-[30px]"
+          onClick={() => setOpen(true)}
+        >
           ☰
         </button>
       </div>
@@ -39,7 +43,7 @@ export default function Header() {
       {/* Menu lateral Mobile */}
       {open && (
         <div className="fixed inset-0 bg-black/50 z-50">
-          <div className="w-64 bg-white h-full p-6">
+          <div className="w-64 bg-white text-black h-full p-6">
             <button className="mb-6" onClick={() => setOpen(false)}>
               ✕
             </button>
